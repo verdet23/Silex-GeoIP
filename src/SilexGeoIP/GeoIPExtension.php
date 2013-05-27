@@ -43,11 +43,10 @@ class GeoIPExtension implements ServiceProviderInterface
 
                 $tmp = $app['geoip.options'];
 
-                foreach ($tmp as $name => &$options) {
-                    if (isset($app['geoip.default_options'][$name])) {
-                        $options = array_replace($app['geoip.default_options'][$name], $options);
+                foreach ($app['geoip.default_options'] as $key => $value) {
+                    if (!isset($tmp[$key])) {
+                        $tmp[$key] = $value;
                     }
-
                 }
 
                 if (!file_exists($tmp['db_path'])) {
