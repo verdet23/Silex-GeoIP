@@ -6,7 +6,7 @@ use Silex\ServiceProviderInterface;
 use SilexGeoIP\GeoIP\GeoIP;
 
 /**
- * Sphinx search extension for Silex
+ * GeoIP extension for Silex
  */
 class GeoIPExtension implements ServiceProviderInterface
 {
