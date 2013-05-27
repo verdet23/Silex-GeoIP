@@ -3,7 +3,7 @@
     "name": "verdet/silex-geoip",
     "description": "GeoIP extension for Silex",
     "keywords": ["geoip", "maxmind"],
-    "homepage": "https://github.com/verdet23/Silex-SphinxSearch",
+    "homepage": "https://github.com/verdet23/Silex-GeoIP",
     "type": "library",
     "license": "MIT",
     "version": "dev",
