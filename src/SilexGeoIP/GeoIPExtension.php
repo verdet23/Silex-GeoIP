@@ -50,7 +50,7 @@ class GeoIPExtension implements ServiceProviderInterface
                 }
 
                 if (!file_exists($tmp['db_path'])) {
-                    throw new \Exception("DB file not exist!");
+                    throw new \Exception(sprintf("DB file %s not exist!", $tmp['db_path']));
                 }
 
                 $app['geoip.options'] = $tmp;
